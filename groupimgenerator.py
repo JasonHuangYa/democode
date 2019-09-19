@@ -5,7 +5,7 @@ sys.setdefaultencoding("utf-8")
 from PIL import Image
 import json
 import urllib2
-
+import imgcut
 
 # 传入1-n 张图片url
 # 下载图片，生成仿微信群头像样式的新照片
@@ -24,7 +24,7 @@ def getgroupheadimg(imglist):
     elif sizel<=0:
         return ''
     #  根据具体的图片数量，反射各个函数
-    func = getattr(wxcrop, 'cut'+str(sizel))
+    func = getattr(imgcut, 'cut'+str(sizel))
     image = func(ln)
     image.show()
     value = StringIO()
