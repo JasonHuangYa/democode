@@ -5,4 +5,4 @@
 <br> <br>
 
 # imgcut.py  groupimgenerator.py
-## 仿微信群样式的 群头像生成器
+* 仿微信群样式的 群头像生成器
